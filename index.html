@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="my.css">
+</head>
+
+<body>
+    <!--Top Section-->
+
+    <div class="intro py-3 bg-white text-center">
+        <div class="container">
+            <h2 class="text-primary display-3 my-4">Javascript Quizz</h2>
+        </div>
+    </div>
+<!-- results section-->
+
+<div class="result py-4 d-none bg-light text-center">
+    <div class="container lead">
+        <p>your result<span class="text-primary display-4 p-3">0%</span>in javascript</p>
+    </div>
+</div>
+    <!--Quizz Section-->
+    <div class="quiz py-4 bg-primary">
+        <div class="container">
+            <h2 class="my-5 text-white">On with the qustion...</h2>
+            <form class="quiz-form text-light">
+                <div class="my-5">
+                    <p class="lead font-weight-normal">1. Inside which HTML element do we put the JavaScript? </p>
+                    <div class="form-cheek my-2 text-white-50">
+                        <input type="radio" name="q1" value="A" checked>
+                        <label class="form-cheek-label"><span>
+                                <</span>script> </label> </div> <div class="form-cheek my-2 text-white-50">
+                                    <input type="radio" name="q1" value="B" checked>
+                                    <label class="form-cheek-label"><span>
+                                            <</span>javascript> </label> </div> <div
+                                                class="form-cheek my-2 text-white-50">
+                                                <input type="radio" name="q1" value="C" checked>
+                                                <label class="form-cheek-label"><span>
+                                                        <</span>js> </label> </div> </div> <div class="my-5">
+                                                            <p class="lead font-weight-normal">2. Where is the correct
+                                                                place to insert a JavaScript?</p>
+                                                            <div class="form-cheek my-2 text-white-50">
+                                                                <input type="radio" name="q2" value="A" checked>
+                                                                <label class="form-cheek-label"> Both the <<head>head>
+                                                                        section and the <<body>body> section are correct
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-cheek my-2 text-white-50">
+                                                                <input type="radio" name="q2" value="B" checked>
+                                                                <label class="form-cheek-label"> The <<head>head>
+                                                                        section</label>
+                                                            </div>
+                                                            <div class="form-cheek my-2 text-white-50">
+                                                                <input type="radio" name="q2" value="C" checked>
+                                                                <label class="form-cheek-label"> The <<body>body>
+                                                                        section</label>
+                                                            </div>
+                    </div>
+                    <div class="my-5">
+                        <p class="lead font-weight-normal">3. What is the correct syntax for referring to an external
+                            script called "xxx.js"?
+                        </p>
+                        <div class="form-cheek my-2 text-white-50">
+                            <input type="radio" name="q3" value="A" checked>
+                            <label class="form-cheek-label"><span>
+                                    <</span>script src="xxx.js"> </label>
+                        </div>
+                        <div class="form-cheek my-2 text-white-50">
+                            <input type="radio" name="q3" value="B" checked>
+                            <label class="form-cheek-label"> <span>
+                                    <</span>script herf="xxx.js"> </label>
+                        </div>
+                        <div class="form-cheek my-2 text-white-50">
+                            <input type="radio" name="q3" value="C" checked>
+                            <label class="form-cheek-label"> <span>
+                                    <</span>script name="xxx.js"> </label>
+                        </div>
+                    </div>
+                    <div class="my-5">
+                        <p class="lead font-weight-normal">4. The external JavaScript file must contain the <span>
+                                <</span>script> tag.</p> <div class="form-cheek my-2 text-white-50">
+                                    <input type="radio" name="q4" value="A" checked>
+                                    <label class="form-cheek-label">True </label>
+                    </div>
+                    <div class="form-cheek my-2 text-white-50">
+                        <input type="radio" name="q4" value="B" checked>
+                        <label class="form-cheek-label"> False </label>
+                    </div>
+                </div>
+                <div class="my-5">
+                    <p class="lead font-weight-normal">5. How do you write "Hello World" in an alert box?
+                    </p>
+                    <div class="form-cheek my-2 text-white-50">
+                        <input type="radio" name="q5" value="A" checked>
+                        <label class="form-cheek-label"> msg("Hello World");
+                        </label>
+                    </div>
+                    <div class="form-cheek my-2 text-white-50">
+                        <input type="radio" name="q5" value="B" checked>
+                        <label class="form-cheek-label"> alert("Hello World");
+                        </label>
+                    </div>
+                    <div class="form-cheek my-2 text-white-50">
+                        <input type="radio" name="q5" value="C" checked>
+                        <label class="form-cheek-label"> alertBox("Hello World");
+                        </label>
+                    </div>
+                </div>
+                <div class="my-5">
+                    <p class="lead font-weight-normal">6. How do you create a function in JavaScript?
+
+                    </p>
+                    <div class="form-cheek my-2 text-white-50">
+                        <input type="radio" name="q6" value="A" checked>
+                        <label class="form-cheek-label"> function = myFunction()
+
+                        </label>
+                    </div>
+                    <div class="form-cheek my-2 text-white-50">
+                        <input type="radio" name="q6" value="B" checked>
+                        <label class="form-cheek-label"> function myFunction()
+
+                        </label>
+                    </div>
+                    <div class="form-cheek my-2 text-white-50">
+                        <input type="radio" name="q6" value="C" checked>
+                        <label class="form-cheek-label"> function:myFunction()
+
+                        </label>
+                    </div>
+                </div>
+                <div class="my-5">
+                    <p class="lead font-weight-normal">7. How to write an IF statement in JavaScript?
+
+                    </p>
+                    <div class="form-cheek my-2 text-white-50">
+                        <input type="radio" name="q7" value="A" checked>
+                        <label class="form-cheek-label"> if i == 5 then
+
+                        </label>
+                    </div>
+                    <div class="form-cheek my-2 text-white-50">
+                        <input type="radio" name="q7" value="B" checked>
+                        <label class="form-cheek-label"> if (i == 5)
+
+                        </label>
+                    </div>
+                    <div class="form-cheek my-2 text-white-50">
+                        <input type="radio" name="q7" value="C" checked>
+                        <label class="form-cheek-label"> if i = 5
+
+                        </label>
+                    </div>
+                </div>
+                <div class="my-5">
+                    <p class="lead font-weight-normal">8. How does a WHILE loop start?
+
+                    </p>
+                    <div class="form-cheek my-2 text-white-50">
+                        <input type="radio" name="q8" value="A" checked>
+                        <label class="form-cheek-label"> while (i <= 10) </label> </div> <div
+                                class="form-cheek my-2 text-white-50">
+                                <input type="radio" name="q8" value="B" checked>
+                                <label class="form-cheek-label"> while (i <= 10; i++) </label> </div> <div
+                                        class="form-cheek my-2 text-white-50">
+                                        <input type="radio" name="q8" value="C" checked>
+                                        <label class="form-cheek-label"> while i = 1 to 10
+
+                                        </label>
+                    </div>
+                </div>
+                <div class="my-5">
+                    <p class="lead font-weight-normal">9. How can you add a comment in a JavaScript?
+
+                    </p>
+                    <div class="form-cheek my-2 text-white-50">
+                        <input type="radio" name="q9" value="A" checked>
+                        <label class="form-cheek-label"> //This is a comment
+
+                        </label>
+                    </div>
+                    <div class="form-cheek my-2 text-white-50">
+                        <input type="radio" name="q9" value="B" checked>
+                        <label class="form-cheek-label"> 'This is a comment
+                        </label>
+                    </div>
+                    <div class="form-cheek my-2 text-white-50">
+                        <input type="radio" name="q9" value="C" checked>
+                        <label class="form-cheek-label"> <span>
+                                <<!- </span>--This is a comment-->
+
+                        </label>
+                    </div>
+                </div>
+                <div class="my-5">
+                    <p class="lead font-weight-normal">10. How do you round the number 7.25, to the nearest integer?
+
+                    </p>
+                    <div class="form-cheek my-2 text-white-50">
+                        <input type="radio" name="q10" value="A" checked>
+                        <label class="form-cheek-label"> Math.rnd(7.25)
+
+                        </label>
+                    </div>
+                    <div class="form-cheek my-2 text-white-50">
+                        <input type="radio" name="q10" value="B" checked>
+                        <label class="form-cheek-label"> round(7.25)
+
+                        </label>
+                    </div>
+                    <div class="form-cheek my-2 text-white-50">
+                        <input type="radio" name="q10" value="C" checked>
+                        <label class="form-cheek-label"> Math.round(7.25)
+                        </label>
+                    </div>
+                </div>
+                <div class="text-ceter">
+                    <input type="submit" class="btn btn-light">
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
